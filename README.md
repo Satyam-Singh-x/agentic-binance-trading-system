@@ -16,6 +16,7 @@ Modular Backend Architecture
 This project supports both CLI-based trading and AI-powered natural language trading, with full validation, logging, and execution abstraction.
 
 
+Live demo link: https://agentic-binance-trading-system-bysatyam.streamlit.app/
 
 📌 Features
 
