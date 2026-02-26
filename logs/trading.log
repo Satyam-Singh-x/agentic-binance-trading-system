@@ -1,0 +1,50 @@
+2026-02-26 17:06:07,239 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:06:07,239 | INFO | bot.orders | Executing order | BTCUSDT | SELL | LIMIT | qty=3.5 | price=10.0
+2026-02-26 17:06:07,248 | INFO | bot.mock_client | [MOCK] LIMIT order | BTCUSDT | SELL | qty=3.5 | price=10.0
+2026-02-26 17:06:08,254 | INFO | bot.orders | Order executed successfully | Order ID: 5084230
+2026-02-26 17:08:23,268 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:08:23,276 | INFO | bot.orders | Executing order | BTCUSDT | SELL | MARKET | qty=3.5 | price=None
+2026-02-26 17:08:23,279 | INFO | bot.mock_client | [MOCK] MARKET order | BTCUSDT | SELL | qty=3.5
+2026-02-26 17:08:24,284 | INFO | bot.orders | Order executed successfully | Order ID: 2698122
+2026-02-26 17:19:54,385 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:19:54,387 | INFO | bot.orders | Executing order | BTCUSDT | SELL | LIMIT | qty=10.0 | price=40.0
+2026-02-26 17:19:54,390 | INFO | bot.mock_client | [MOCK] LIMIT order | BTCUSDT | SELL | qty=10.0 | price=40.0
+2026-02-26 17:19:55,394 | INFO | bot.orders | Order executed successfully | Order ID: 2477803
+2026-02-26 17:22:21,520 | INFO | agent.nodes | ========== PARSE NODE STARTED ==========
+2026-02-26 17:22:21,525 | INFO | agent.nodes | [PARSE] Raw Input: Buy 0.01 BTC in market
+2026-02-26 17:22:23,738 | INFO | agent.nodes | [PARSE] LLM response received. Parsing structured output...
+2026-02-26 17:22:23,741 | INFO | agent.nodes | [PARSE] Parsing successful: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.01, 'price': None}
+2026-02-26 17:22:23,747 | INFO | agent.nodes | ========== PARSE NODE COMPLETED ==========
+2026-02-26 17:22:23,748 | INFO | agent.nodes | ========== VALIDATION NODE STARTED ==========
+2026-02-26 17:22:23,748 | INFO | agent.nodes | [VALIDATION] Validating order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.01, 'price': None}
+2026-02-26 17:22:23,748 | INFO | agent.nodes | [VALIDATION] Validation successful.
+2026-02-26 17:22:23,753 | INFO | agent.nodes | ========== VALIDATION NODE COMPLETED ==========
+2026-02-26 17:22:23,760 | INFO | agent.nodes | ========== EXECUTION NODE STARTED ==========
+2026-02-26 17:22:23,761 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:22:23,763 | INFO | agent.nodes | [EXECUTION] Executing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.01, 'price': None}
+2026-02-26 17:22:23,765 | INFO | bot.orders | Executing order | BTCUSDT | BUY | MARKET | qty=0.01 | price=None
+2026-02-26 17:22:23,765 | INFO | bot.mock_client | [MOCK] MARKET order | BTCUSDT | BUY | qty=0.01
+2026-02-26 17:22:24,779 | INFO | bot.orders | Order executed successfully | Order ID: 1921729
+2026-02-26 17:22:24,779 | INFO | agent.nodes | [EXECUTION] Success | Order ID: 1921729 | Status: FILLED
+2026-02-26 17:22:24,779 | INFO | agent.nodes | ========== EXECUTION NODE COMPLETED ==========
+2026-02-26 17:22:24,779 | INFO | agent.nodes | ========== SUMMARY NODE STARTED ==========
+2026-02-26 17:22:24,779 | INFO | agent.nodes | [SUMMARY] Generating execution summary via LLM.
+2026-02-26 17:22:27,448 | INFO | agent.nodes | [SUMMARY] Summary generation successful.
+2026-02-26 17:22:27,448 | INFO | agent.nodes | ========== SUMMARY NODE COMPLETED ==========
+2026-02-26 17:30:55,936 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:30:55,938 | INFO | bot.orders | Executing order | BTCUSDT | BUY | MARKET | qty=0.0 | price=None
+2026-02-26 17:30:55,941 | WARNING | bot.orders | Validation failed: Quantity must be greater than 0.
+2026-02-26 17:33:33,936 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:33:33,936 | INFO | bot.orders | Executing order | BTCUSDT | BUY | MARKET | qty=0.04 | price=None
+2026-02-26 17:33:33,941 | INFO | bot.mock_client | [MOCK] MARKET order | BTCUSDT | BUY | qty=0.04
+2026-02-26 17:33:34,949 | INFO | bot.orders | Order executed successfully | Order ID: 4640798
+2026-02-26 17:36:16,960 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:36:16,960 | INFO | bot.orders | Executing order | BTCUSDT | BUY | MARKET | qty=0.01 | price=None
+2026-02-26 17:36:16,960 | INFO | bot.mock_client | [MOCK] MARKET order | BTCUSDT | BUY | qty=0.01
+2026-02-26 17:36:17,969 | INFO | bot.orders | Order executed successfully | Order ID: 2857374
+2026-02-26 17:36:17,969 | INFO | __main__ | CLI order executed successfully.
+2026-02-26 17:38:59,384 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 17:38:59,384 | INFO | bot.orders | Executing order | BTCUSDT | BUY | MARKET | qty=0.01 | price=None
+2026-02-26 17:38:59,384 | INFO | bot.mock_client | [MOCK] MARKET order | BTCUSDT | BUY | qty=0.01
+2026-02-26 17:39:00,395 | INFO | bot.orders | Order executed successfully | Order ID: 1560306
+2026-02-26 17:39:00,397 | INFO | __main__ | CLI order executed successfully.

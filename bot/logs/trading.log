@@ -1,0 +1,5 @@
+2026-02-26 16:21:39,022 | INFO | agent.nodes | Schema-based parsing successful.
+2026-02-26 16:21:39,031 | INFO | bot.orders | Using Mock Binance Client.
+2026-02-26 16:21:39,031 | INFO | bot.orders | Executing order | BTCUSDT | BUY | MARKET | qty=0.01 | price=None
+2026-02-26 16:21:39,032 | INFO | bot.mock_client | [MOCK] MARKET order | BTCUSDT | BUY | qty=0.01
+2026-02-26 16:21:40,040 | INFO | bot.orders | Order executed successfully | Order ID: 1620275
